@@ -1,3 +1,8 @@
+*uses https://github.com/morristech/android-ifaddrs  
+
+Original readme below
+---
+
 # SDL_net 3.0
 
 The latest version of this library is available from GitHub:

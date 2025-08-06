@@ -70,7 +70,11 @@ static int read(SOCKET s, char *buf, size_t count) {
 #include <poll.h>
 #include <unistd.h>
 #include <fcntl.h>
+#ifdef __ANDROID_API__ && __ANDROID_API__ < 24
+#include "compat_ifaddrs.h"
+#else
 #include <ifaddrs.h>
+#endif
 #define INVALID_SOCKET -1
 #define SOCKET_ERROR -1
 typedef int Socket;
